@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    padding: 25px 50px;
+    padding: 24px 48px;
     text-align: center;
     box-shadow: 0px 5px 10px #922ba033;
 }
@@ -20,7 +20,6 @@ header h1 {
     background: linear-gradient(90deg, #202b5c 0%, #83339b 33%, #ad4a90 66%, #ec26a0 100%);
     background-clip: text;
     -webkit-background-clip: text;
-
     color: transparent;
 
     font-size: 40px;
@@ -33,6 +32,11 @@ header p {
     font-size: 24px;
     font-weight: 480;
     margin-bottom: 24px;
+}
+
+.contact-group {
+    display:flex;
+    
 }
 
 
