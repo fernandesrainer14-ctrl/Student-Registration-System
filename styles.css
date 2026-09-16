@@ -77,8 +77,37 @@ header p {
 }
 
 .form-group input:focus{
-    box-shadow: 0 0 4px 4px #619aa1;
+    box-shadow: 0 0 4px 5px #b965a4;
 }
+
+.button {
+    margin-top: 24px;
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    background-color: #0000ff;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.3px ease;
+}
+
+.button:hover {
+    border: 2px dotted;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #2e06df;
+    border: none;
+    transform: scale(0.95);
+}
+
+
+
+
 
 
 
