@@ -51,9 +51,10 @@ header p {
 }
 
 .subtitle {
+    margin-bottom: 40px;
     text-align: center;
+    font-size: 20px;
     color: white;
-    margin-bottom: 32px;
 }
 
 .form-group {
@@ -95,14 +96,57 @@ header p {
 }
 
 .button:hover {
-    border: 2px dotted;
     transform: scale(1.05);
 }
 
 .button:active {
-    background-color: #2e06df;
-    border: none;
+    background-color: #0508cf;
     transform: scale(0.95);
+}
+
+/* Student Records */
+
+.student-records {
+    width: 100%;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px black;
+}
+
+.student-records h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 720px;
+}
+
+/* Table */
+
+.table-content{
+    width: 100px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: px solid #ddd;
+}
+
+th {
+    background-color: #202b5c;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
 }
 
 
