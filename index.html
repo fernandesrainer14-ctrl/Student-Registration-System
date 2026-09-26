@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration System</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="App.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,13 +22,13 @@
        <form id="studentForm">
 
         <div class="form-group">
-             <label for="student-name">Student Name</label>
+             <label for="studentName">Student Name</label>
              <input
              type="text"
              id="studentName"
              name="studentName"
              placeholder="Enter your full name"
-             pattern="[A-Za-z ]+"
+             pattern="[A-Za-z '']+"
              required 
              >
         </div>
@@ -62,18 +63,20 @@
         id="contact"
         name="contact"
         placeholder="Enter your Contact Number"
-        pattern="\+[0-9]{1, 3}[0-9]{10}"
-        maxlength="13"
+        pattern="(?:\+[0-9]{1,3})?[0-9]{10}"
+        maxlength="14"
         required
         >
     </div>
 
         <button type="submit" class="button">Register Now</button>
-    </div>
+    
       </form>
 
      </div>
 
+    </div>
+    
     </div>
 
 <!--Registered Students Section-->
@@ -120,8 +123,6 @@
         </table>
     </div>
 </section>
-
-
 
 </body>
 </html>
