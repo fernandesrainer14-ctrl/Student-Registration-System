@@ -79,6 +79,22 @@ tableBody.addEventListener("click", function(event) {
         editingRow = row;
 
         submitButton.textContent = "Update Student";
+
+        const nameInput = document.getElementById("studentName");
+
+// Scroll into the form and focus on the input field       
+
+nameInput.focus({
+    preventScroll: true
+});
+
+nameInput.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+});
     }
 
+    
+
 });
+
