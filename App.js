@@ -30,6 +30,7 @@ form.addEventListener("submit", function(event) {
             <td>${contact}</td>
             <td>
                 <button type="button" class="edit-button">Edit</button>
+                <button type="button" class="delete-button">Delete</button>
             </td>
         `;
 
@@ -56,7 +57,7 @@ form.addEventListener("submit", function(event) {
 });
 
 
-// Edit button
+// Edit Student Records 
 
 tableBody.addEventListener("click", function(event) {
 
@@ -80,9 +81,10 @@ tableBody.addEventListener("click", function(event) {
 
         submitButton.textContent = "Update Student";
 
-        const nameInput = document.getElementById("studentName");
+    
+// Scroll into the form and focus on the input field 
 
-// Scroll into the form and focus on the input field       
+const nameInput = document.getElementById("studentName");      
 
 nameInput.focus({
     preventScroll: true
@@ -95,6 +97,17 @@ nameInput.scrollIntoView({
     }
 
     
-
 });
 
+ // Delete Student Records
+
+tableBody.addEventListener("click", function(event) {
+
+if (event.target.classList.contains("delete-button")) {
+
+        const row = event.target.closest("tr");
+
+        row.remove();
+
+}
+});
